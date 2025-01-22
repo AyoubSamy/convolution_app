@@ -36,12 +36,12 @@ The image below illustrates the convolution process, where the kernel is slid ov
 
 1. Compile the program using a C compiler (e.g., GCC):
    ```bash
-   gcc -o gaussian_filter gaussian_filter.c -lm
+   gcc -o convolution_app convolution_app.c -lm
    ```
 
 2. Run the program:
    ```bash
-   ./gaussian_filter
+   ./convolution_app
    ```
 
 3. Follow the prompts to input matrix size, kernel size, and sigma.
