@@ -1,7 +1,4 @@
-/*Tarik Khoumri CCN
-Sidi Mohamed Nabgha Abd Latif GLSID
-Abdellah khaiy GLSID
-Ayoub Samy BDCC */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
