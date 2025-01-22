@@ -24,13 +24,13 @@ This project generates a matrix of pixel values, applies a Gaussian filter to sm
 ## Gaussian Filter Function
 
 The Gaussian filter is generated using the following function:
-![Convolution Example](convolution_app/gausse_function.gif)
+![Convolution Example](gausse_function.gif)
 
 ## Convolution Product :
 
 The image below illustrates the convolution process, where the kernel is slid over the matrix and a weighted sum of overlapping values is computed for each position:
 
-![Convolution Process](convolution_app/convolution_product.png)
+![Convolution Process](convolution_product.png)
 
 ## Usage
 
