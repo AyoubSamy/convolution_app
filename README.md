@@ -23,39 +23,10 @@ This project generates a matrix of pixel values, applies a Gaussian filter to sm
 
 ## Gaussian Filter Function
 
-The Gaussian filter is applied using the following function:
+The Gaussian filter is generated using the following function:
+![Convolution Example](images/convolution_example.png)
 
-```c
-// Function to apply Gaussian filter to a matrix
-double** apply_gaussian_filter(double** Matrice, int lignes, int colonnes, double** kernel, int k, double** Matrice_resultat) {
-    int N = 2 * k + 1; // Taille du noyau
-
-    // Parcourir chaque pixel de l'image
-    for (int i = 0; i < lignes; i++) {
-        for (int j = 0; j < colonnes; j++) {
-            double pix_conv = 0.0;
-
-            // Convolution: appliquer le noyau autour du pixel (i, j)
-            for (int ki = 0; ki < N; ki++) {
-                for (int kj = 0; kj < N; kj++) {
-                    int x = i + (ki - k); // Horizontal shift
-                    int y = j + (kj - k); // Vertical shift
-
-                    // Vérifier les bords (ignorer les pixels hors image)
-                    if (x >= 0 && x < lignes && y >= 0 && y < colonnes) {
-                        pix_conv += Matrice[x][y] * kernel[ki][kj];
-                    }
-                }
-            }
-
-            Matrice_resultat[i][j] = pix_conv; // Résultat dans l'image filtrée
-        }
-    }
-    return Matrice_resultat;
-}
-```
-
-## Visualization of Convolution
+## Convolution Product :
 
 The image below illustrates the convolution process, where the kernel is slid over the matrix and a weighted sum of overlapping values is computed for each position:
 
