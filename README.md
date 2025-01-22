@@ -36,7 +36,7 @@ The image below illustrates the convolution process, where the kernel is slid ov
 
 1. Compile the program using a C compiler (e.g., GCC):
    ```bash
-   gcc -o convolution_app convolution_app.c -lm
+   gcc -o convolution_app main.c -lm
    ```
 
 2. Run the program:
