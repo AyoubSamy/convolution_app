@@ -22,8 +22,8 @@ This project generates a matrix of pixel values, applies a Gaussian filter to sm
    - Applies the filter to the matrix, producing a smoothed output.
 
 ## Gaussian Filter Function
-
 The Gaussian filter is generated using the following function:
+
 ![Convolution Example](Gaussian_function.png)
 
 ## Convolution Product :
